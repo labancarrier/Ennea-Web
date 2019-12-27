@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
     <div class="container">
       <div class="navbar-brand-wrapper d-flex w-100">
-        <a class="nav-link" href="#header-section"><img src="https://docs.google.com/drawings/d/e/2PACX-1vTgfOhns2W4ZmCt-nhpgPG9dXRwDFRl9dUYhVPG6m2-axOxVeKRs5NgCBrBzFsk4jUg5OMsUUX_xpGn/pub?w=563&h=337" alt="" style="width: 200px;margin-top: -70px;margin-bottom: -70px;"> <h1></h1></a>
+        <a class="nav-link" href="#header-section"><img src="https://files.slack.com/files-pri/TNNR8758R-FS4NKBSRL/screen_shot_2019-12-26_at_6.20.10_pm.png" alt="" style="width: 200px;margin-top: -70px;margin-bottom: -70px;"> <h1></h1></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="mdi mdi-menu navbar-toggler-icon"></span>
         </button>
@@ -333,24 +333,26 @@
               <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
             </div>
             <div class="modal-body">
-              <form>
+
+              <form action="mail.php" method="POST">
                 <div class="form-group">
                   <label for="Name">Name</label>
-                  <input type="text" class="form-control" id="Name" placeholder="Name">
+                  <input type="text" class="form-control" id="name" placeholder="Name" name="name">
                 </div>
                 <div class="form-group">
                   <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="Email-1" placeholder="Email">
+                  <input type="email" class="form-control" id="email" placeholder="Email" name="email">
                 </div>
                 <div class="form-group">
                   <label for="Message">Message</label>
-                  <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
+                  <textarea class="form-control" id="message" name="message" placeholder="Enter your Message"></textarea>
                 </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-success">Submit</button>
+              <a class="" onclick="validateForm()">
+              <button type="button" class="btn btn-success">Submit</button></a>
             </div>
           </div>
         </div>
