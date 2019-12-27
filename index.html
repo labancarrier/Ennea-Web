@@ -313,7 +313,7 @@
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
               <h5 class="pb-2">Current traveling students of</h5>
               <a href="https://theglobalu.org/">
-              <p class="text-muted">Global U</p></a>
+              <p class="">Global U</p></a>
               <div class="d-flex justify-content-center justify-content-md-start">
                 <a href="#"><span class="mdi mdi-facebook"></span></a>
                 <a href="#"><span class="mdi mdi-twitter"></span></a>
@@ -335,25 +335,24 @@
             </div>
             <div class="modal-body">
 
-              <form action="mail.php" method="POST">
+              <form action="https://formspree.io/mpzqjqwl" method="POST">
                 <div class="form-group">
                   <label for="Name">Name</label>
                   <input type="text" class="form-control" id="name" placeholder="Name" name="name">
                 </div>
                 <div class="form-group">
                   <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                  <input type="email" class="form-control" id="email" placeholder="Email" name="_replyto">
                 </div>
                 <div class="form-group">
                   <label for="Message">Message</label>
-                  <textarea class="form-control" id="message" name="message" placeholder="Enter your Message"></textarea>
+                  <textarea class="form-control" id="message" name="_message" placeholder="Enter your Message"></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                  <input type="submit" value="Submit" type="button" class="btn btn-success"></a>
                 </div>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-              <a class="" onclick="validateForm()">
-              <button type="button" class="btn btn-success">Submit</button></a>
             </div>
           </div>
         </div>
